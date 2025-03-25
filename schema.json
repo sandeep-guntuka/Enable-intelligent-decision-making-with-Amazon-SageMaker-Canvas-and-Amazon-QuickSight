@@ -1,0 +1,47 @@
+{
+  "inputContentType": "CSV",
+  "outputContentType": "CSV",
+  "input": [
+      {
+          "name": "GRE Score",
+          "type": "INTEGER"
+      },
+      {
+          "name": "TOEFL Score",
+          "type": "INTEGER"
+      },
+      {
+          "name": "University Rating",
+          "type": "INTEGER"
+      },
+      {
+          "name": "SOP",
+          "type": "INTEGER"
+      },
+      {
+          "name": "LOR",
+          "type": "INTEGER"
+      },
+      {
+          "name": "CGPA",
+          "type": "INTEGER"
+      },
+      {
+          "name": "Research",
+          "type": "INTEGER"
+      }
+  ],
+  "output": [
+      {
+          "name": "Chance of Admit",
+          "type": "DECIMAL"
+      }
+  ],
+  "description": "Admission prediction model based on GRE, TOEFL, CGPA, and other factors.",
+  "version": "v1",
+  "instanceCount": 1,
+  "instanceTypes": [
+      "ml.c4.xlarge"
+  ],
+  "defaultInstanceType": "ml.c4.xlarge"
+}
